@@ -1,0 +1,22 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.4.10'
+}
+
+group 'dev.phellipe'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'io.javalin:javalin:3.7.0'
+    compile "org.slf4j:slf4j-simple:1.8.0-beta4"
+    compile "org.slf4j:slf4j-api:1.8.0-beta4"
+    compile group: 'io.swagger.core.v3', name: 'swagger-core', version: '2.0.9'
+    compile group: 'org.webjars', name: 'swagger-ui', version: '3.24.3'
+    compile group: 'org.webjars.npm', name: 'redoc', version: '2.0.0-rc.31'
+    compile group: 'com.fasterxml.jackson.module', name: 'jackson-module-kotlin', version: '2.10.1'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.1'
+    compile group: 'io.github.classgraph', name: 'classgraph', version: '4.8.34'
+}
